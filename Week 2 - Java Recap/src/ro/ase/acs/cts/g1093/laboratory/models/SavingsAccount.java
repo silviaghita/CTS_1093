@@ -25,7 +25,6 @@ public class SavingsAccount extends BankAccount implements Profitable {
 		}
 		else
 			this.balance -= amount;
-		
 	}
 
 	@Override
@@ -40,8 +39,7 @@ public class SavingsAccount extends BankAccount implements Profitable {
 
 	@Override
 	public void addInterest(double interestPercentRate) {
-		this.balance *= (1 + interestPercentRate/100);
-		
+		this.balance *= (1 + interestPercentRate/100);	
 	}
 	
 }
