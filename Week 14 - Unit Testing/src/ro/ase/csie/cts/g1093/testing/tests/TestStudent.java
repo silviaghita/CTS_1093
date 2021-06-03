@@ -10,10 +10,13 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 
+import jdk.jfr.Category;
 import ro.ase.csie.cts.g1093.testing.exceptions.WrongAgeException;
 import ro.ase.csie.cts.g1093.testing.exceptions.WrongGradeException;
 import ro.ase.csie.cts.g1093.testing.exceptions.WrongNameException;
 import ro.ase.csie.cts.g1093.testing.models.Student;
+import ro.ase.csie.cts.g1093.testing.tests.categories.ImportantTest;
+import ro.ase.csie.cts.g1093.testing.tests.categories.PerformanceTest;
 
 public class TestStudent {
 	
@@ -129,6 +132,7 @@ public class TestStudent {
 		assertEquals("Testing with an empty array of grades", expectedAverage, computedAverage, 0);
 
 	}
+	
 	
 	@org.junit.Test
 	public void testGetGradesAverageExistenceNullReferenceForGrades() throws WrongGradeException {
