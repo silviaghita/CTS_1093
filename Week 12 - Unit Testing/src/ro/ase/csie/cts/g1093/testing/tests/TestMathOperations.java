@@ -41,7 +41,7 @@ public class TestMathOperations {
 	@Test
 	public void testAddNormalValues() {
 		int a = 5;
-		int b =6;
+		int b = 6;
 		int expectedResult = 11;
 		int actualResult = MathOperations.add(a, b);
 		assertEquals("Adding 5 and 6", expectedResult, actualResult);
